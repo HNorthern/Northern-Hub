@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  doc-page:not(:defined){visibility:hidden;}
+  body{font-family:'Instrument Sans',system-ui,sans-serif;color:#0e1730;}
+  .mono{font-family:'JetBrains Mono',monospace;}
+</style>
+<script src="./doc-page.js"></script>
+</helmet>
+
+<doc-page margin="0.8in">
+
+  <div slot="header" style="display:flex;align-items:center;justify-content:space-between;padding-bottom:8px;border-bottom:1px solid #dde3ee;font-size:9pt;color:#6b7488;">
+    <span style="font-weight:600;color:#082058;">Northern Hub &mdash; Tester Guide</span>
+    <span>Northern CJB Contracting LLC</span>
+  </div>
+
+  <div slot="footer" style="display:flex;align-items:center;justify-content:space-between;padding-top:8px;border-top:1px solid #dde3ee;font-size:8.5pt;color:#8089a0;">
+    <span>Commercial system pilot</span>
+    <span>Keep this document with your backup files</span>
+  </div>
+
+  <div style="background:#082058;color:#fff;padding:26px 30px;border-radius:10px;margin-bottom:26px;">
+    <div style="font-size:9.5pt;letter-spacing:1.6px;text-transform:uppercase;color:#9fabce;margin-bottom:7px;">Pilot &middot; Commercial Team</div>
+    <h1 style="font-size:26pt;font-weight:700;letter-spacing:-0.5px;line-height:1.1;margin-bottom:9px;">Northern Hub</h1>
+    <p style="font-size:11pt;color:#c5d0e8;line-height:1.5;max-width:78%;">How to open the system, protect your work, and move it safely across updates. Please read section 2 before you enter any data.</p>
+  </div>
+
+  <h2 style="font-size:14pt;font-weight:700;color:#082058;margin-bottom:5px;">1. Getting started</h2>
+  <p style="font-size:10.5pt;line-height:1.6;color:#333c52;margin-bottom:11px;">Northern Hub runs entirely in your web browser. There is nothing to install.</p>
+  <ol style="font-size:10.5pt;line-height:1.75;color:#333c52;padding-left:20px;margin-bottom:10px;">
+    <li>Open the link you have been sent in <strong>Chrome or Edge on a desktop or laptop</strong>. Phones and tablets are not supported for this pilot.</li>
+    <li>Bookmark the page &mdash; you will return to the same address each time.</li>
+    <li>Click <strong>Start Project Setup</strong> and enter your project's contract particulars.</li>
+  </ol>
+  <div style="background:#fbf2e0;border:1px solid #f0e4c6;border-radius:8px;padding:13px 16px;font-size:10pt;color:#82601a;line-height:1.55;margin-bottom:24px;">
+    <strong>Use fictional names.</strong> During the pilot, please do not enter real client names, real subcontractor names, or genuinely sensitive contract values. Use realistic <em>shapes</em> of numbers so the testing is meaningful, but keep identities anonymous.
+  </div>
+
+  <h2 style="font-size:14pt;font-weight:700;color:#082058;margin-bottom:5px;">2. Your data lives on your computer</h2>
+  <p style="font-size:10.5pt;line-height:1.6;color:#333c52;margin-bottom:11px;">This is the most important thing to understand. Your work is saved <strong>inside your own browser</strong>, on the machine you are using. It is not on a server and nobody else can see it.</p>
+  <table style="width:100%;border-collapse:collapse;font-size:10pt;margin-bottom:12px;">
+    <thead>
+      <tr style="background:#f4f6fa;">
+        <th style="text-align:left;padding:9px 12px;font-weight:600;color:#54607a;border-bottom:1px solid #dde3ee;">This means</th>
+        <th style="text-align:left;padding:9px 12px;font-weight:600;color:#54607a;border-bottom:1px solid #dde3ee;">Consequence</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td style="padding:9px 12px;border-bottom:1px solid #eef1f5;">Your work stays on one machine</td><td style="padding:9px 12px;border-bottom:1px solid #eef1f5;">Opening the link on a different computer shows an empty system</td></tr>
+      <tr><td style="padding:9px 12px;border-bottom:1px solid #eef1f5;">Clearing browsing data deletes it</td><td style="padding:9px 12px;border-bottom:1px solid #eef1f5;">Do not clear cookies or site data for this address</td></tr>
+      <tr><td style="padding:9px 12px;border-bottom:1px solid #eef1f5;">Private/Incognito windows do not save</td><td style="padding:9px 12px;border-bottom:1px solid #eef1f5;">Always use a normal browser window</td></tr>
+      <tr><td style="padding:9px 12px;">Nobody else can see your projects</td><td style="padding:9px 12px;">Send a backup file to share your work</td></tr>
+    </tbody>
+  </table>
+  <div style="background:#fbecee;border:1px solid #f0d3d8;border-radius:8px;padding:13px 16px;font-size:10pt;color:#a23b4e;line-height:1.55;margin-bottom:24px;">
+    <strong>Back up weekly, and always before an update.</strong> A backup is the only copy that survives a cleared cache, a new laptop, or a software update. The system will remind you, but the habit is yours.
+  </div>
+
+  <h2 style="font-size:14pt;font-weight:700;color:#082058;margin-bottom:5px;">3. Taking a backup</h2>
+  <p style="font-size:10.5pt;line-height:1.6;color:#333c52;margin-bottom:11px;">The backup controls are at the bottom of the left sidebar, beneath your name.</p>
+  <ol style="font-size:10.5pt;line-height:1.75;color:#333c52;padding-left:20px;margin-bottom:11px;">
+    <li>Click <strong>Back up</strong>.</li>
+    <li>A file downloads, named something like <span class="mono" style="font-size:9.5pt;background:#f4f6fa;padding:1px 5px;border-radius:3px;">Northern-Hub-3-projects-backup-2026-08-16.json</span>.</li>
+    <li>Save it somewhere you will find it again &mdash; your OneDrive folder is ideal, not your Downloads folder.</li>
+  </ol>
+  <p style="font-size:10.5pt;line-height:1.6;color:#333c52;margin-bottom:11px;">One backup file contains <strong>every project</strong> you have created, together with all cost reports, variations, site instructions, certificates and cashflow profiles.</p>
+  <p style="font-size:10.5pt;line-height:1.6;color:#333c52;margin-bottom:24px;">The sidebar shows when you last backed up. It turns amber, and a banner appears at the top of the screen, once your last backup is over a week old.</p>
+
+  <h2 style="font-size:14pt;font-weight:700;color:#082058;margin-bottom:5px;">4. Send your backup in every Friday</h2>
+  <p style="font-size:10.5pt;line-height:1.6;color:#333c52;margin-bottom:11px;">Because your work sits on your own machine, nobody else can see it &mdash; including the company roll-up. So that the Commercial Director can see the overall position across all projects, we need your backup file <strong>once a week</strong>.</p>
+  <div style="border:1px solid #dde3ee;border-radius:9px;overflow:hidden;margin-bottom:12px;">
+    <div style="display:flex;gap:14px;padding:12px 16px;border-bottom:1px solid #eef1f5;">
+      <div style="flex:none;width:24px;height:24px;border-radius:50%;background:#1f8a5b;color:#fff;display:flex;align-items:center;justify-content:center;font-size:9.5pt;font-weight:700;">1</div>
+      <div style="font-size:10.5pt;line-height:1.55;"><strong>Every Friday afternoon</strong>, click <strong>Back up</strong> in the sidebar.</div>
+    </div>
+    <div style="display:flex;gap:14px;padding:12px 16px;border-bottom:1px solid #eef1f5;">
+      <div style="flex:none;width:24px;height:24px;border-radius:50%;background:#1f8a5b;color:#fff;display:flex;align-items:center;justify-content:center;font-size:9.5pt;font-weight:700;">2</div>
+      <div style="font-size:10.5pt;line-height:1.55;">Email the downloaded file to <strong>Harry Newbegin</strong>, subject line <span class="mono" style="font-size:9.5pt;background:#f4f6fa;padding:1px 5px;border-radius:3px;">Northern Hub backup &mdash; [your name]</span>.</div>
+    </div>
+    <div style="display:flex;gap:14px;padding:12px 16px;">
+      <div style="flex:none;width:24px;height:24px;border-radius:50%;background:#1f8a5b;color:#fff;display:flex;align-items:center;justify-content:center;font-size:9.5pt;font-weight:700;">3</div>
+      <div style="font-size:10.5pt;line-height:1.55;">Keep your own copy as well &mdash; sending it does not remove it from your machine.</div>
+    </div>
+  </div>
+  <p style="font-size:10pt;line-height:1.6;color:#6b7488;margin-bottom:24px;">Send the file even if you have not done much that week. A quiet week is useful information, and it keeps the company figures current.</p>
+
+  <h2 style="font-size:14pt;font-weight:700;color:#082058;margin-bottom:5px;">5. When an update is released</h2>
+  <p style="font-size:10.5pt;line-height:1.6;color:#333c52;margin-bottom:11px;">You will be told when a new version is available. Follow these four steps <strong>in order</strong>.</p>
+  <div style="border:1px solid #dde3ee;border-radius:9px;overflow:hidden;margin-bottom:12px;">
+    <div style="display:flex;gap:14px;padding:13px 16px;border-bottom:1px solid #eef1f5;">
+      <div style="flex:none;width:26px;height:26px;border-radius:50%;background:#082058;color:#fff;display:flex;align-items:center;justify-content:center;font-size:10pt;font-weight:700;">1</div>
+      <div style="font-size:10.5pt;line-height:1.55;"><strong>Back up first.</strong> Before you do anything else, click Back up and save the file.</div>
+    </div>
+    <div style="display:flex;gap:14px;padding:13px 16px;border-bottom:1px solid #eef1f5;">
+      <div style="flex:none;width:26px;height:26px;border-radius:50%;background:#082058;color:#fff;display:flex;align-items:center;justify-content:center;font-size:10pt;font-weight:700;">2</div>
+      <div style="font-size:10.5pt;line-height:1.55;"><strong>Hard-refresh the page.</strong> Hold <span class="mono" style="font-size:9.5pt;background:#f4f6fa;padding:1px 5px;border-radius:3px;">Ctrl</span> and press <span class="mono" style="font-size:9.5pt;background:#f4f6fa;padding:1px 5px;border-radius:3px;">F5</span>. Without this your browser may keep showing the old version.</div>
+    </div>
+    <div style="display:flex;gap:14px;padding:13px 16px;border-bottom:1px solid #eef1f5;">
+      <div style="flex:none;width:26px;height:26px;border-radius:50%;background:#082058;color:#fff;display:flex;align-items:center;justify-content:center;font-size:10pt;font-weight:700;">3</div>
+      <div style="font-size:10.5pt;line-height:1.55;"><strong>Check the version.</strong> The number at the bottom of the sidebar should match the one you were told to expect.</div>
+    </div>
+    <div style="display:flex;gap:14px;padding:13px 16px;">
+      <div style="flex:none;width:26px;height:26px;border-radius:50%;background:#082058;color:#fff;display:flex;align-items:center;justify-content:center;font-size:10pt;font-weight:700;">4</div>
+      <div style="font-size:10.5pt;line-height:1.55;"><strong>Check your data is still there.</strong> Your projects should appear as normal. If anything is missing, use Restore &mdash; see section 6.</div>
+    </div>
+  </div>
+  <p style="font-size:10pt;line-height:1.6;color:#6b7488;margin-bottom:24px;">In most cases your data carries across an update automatically. The backup is insurance, not an expected step.</p>
+
+  <h2 style="font-size:14pt;font-weight:700;color:#082058;margin-bottom:5px;">6. Restoring from a backup</h2>
+  <p style="font-size:10.5pt;line-height:1.6;color:#333c52;margin-bottom:11px;">Use this if data is missing after an update, if you move to a new machine, or if something has gone wrong.</p>
+  <ol style="font-size:10.5pt;line-height:1.75;color:#333c52;padding-left:20px;margin-bottom:11px;">
+    <li>Click <strong>Restore</strong> in the sidebar.</li>
+    <li>Choose your most recent backup file.</li>
+    <li>The sidebar confirms how many projects were restored.</li>
+    <li>Check a cost report and a cashflow to satisfy yourself the figures are right.</li>
+  </ol>
+  <div style="background:#eef4fb;border:1px solid #cddcf0;border-radius:8px;padding:13px 16px;font-size:10pt;color:#2a5db0;line-height:1.55;margin-bottom:24px;">
+    <strong>Older backups still work.</strong> A backup taken on a previous version is upgraded automatically when you restore it. You will never be locked out of your own data by an update.
+  </div>
+
+  <h2 style="font-size:14pt;font-weight:700;color:#082058;margin-bottom:5px;">7. What we would like you to test</h2>
+  <p style="font-size:10.5pt;line-height:1.6;color:#333c52;margin-bottom:11px;">Please work through a project as you would in reality, rather than clicking around. In particular:</p>
+  <ul style="font-size:10.5pt;line-height:1.75;color:#333c52;padding-left:20px;margin-bottom:11px;">
+    <li>Set up a project and build out the cost report with real-shaped packages</li>
+    <li>Place orders, hold contingency, and release packages you do not procure</li>
+    <li>Raise client variations through the full approval and agreement cycle</li>
+    <li>Issue site instructions, both recoverable and non-recoverable</li>
+    <li>Raise payment applications and subcontractor certificates, and take them through approval</li>
+    <li>Profile the cashflow and check it reconciles to the cost report</li>
+  </ul>
+  <p style="font-size:10.5pt;line-height:1.6;color:#333c52;margin-bottom:24px;">We are looking for anything that is <strong>wrong</strong>, anything that is <strong>slower than your spreadsheet</strong>, and anything that is <strong>missing</strong> from how you actually work.</p>
+
+  <h2 style="font-size:14pt;font-weight:700;color:#082058;margin-bottom:5px;">8. Reporting a problem</h2>
+  <p style="font-size:10.5pt;line-height:1.6;color:#333c52;margin-bottom:11px;">When something looks wrong, please send:</p>
+  <ul style="font-size:10.5pt;line-height:1.75;color:#333c52;padding-left:20px;margin-bottom:11px;">
+    <li>What you were doing, step by step</li>
+    <li>What you expected, and what actually happened</li>
+    <li>A screenshot &mdash; press <span class="mono" style="font-size:9.5pt;background:#f4f6fa;padding:1px 5px;border-radius:3px;">Windows</span> + <span class="mono" style="font-size:9.5pt;background:#f4f6fa;padding:1px 5px;border-radius:3px;">Shift</span> + <span class="mono" style="font-size:9.5pt;background:#f4f6fa;padding:1px 5px;border-radius:3px;">S</span></li>
+    <li>The version number from the sidebar</li>
+    <li>A backup file, if the problem involves specific figures</li>
+  </ul>
+  <div style="background:#f4f6fa;border-radius:8px;padding:14px 16px;font-size:10.5pt;color:#333c52;line-height:1.6;">
+    <strong style="color:#082058;">Send reports to:</strong> Harry Newbegin, Commercial Director
+  </div>
+
+</doc-page>
+</x-dc>
+</body>
+</html>
