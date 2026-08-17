@@ -40,7 +40,7 @@
   <!-- SIDEBAR -->
   <aside style="width:208px;flex:none;background:#082058;color:#fff;display:flex;flex-direction:column;padding:22px 12px;overflow-y:auto;overflow-x:hidden;">
     <div style="display:flex;align-items:center;gap:10px;padding:4px 8px 22px;">
-      <img src="assets/np-logo.png" alt="Northern Projects" style="height:40px;width:auto;filter:brightness(0) invert(1);object-fit:contain;"/>
+      <img src="assets/np-logo.png" alt="Northern Projects" style="height:52px;width:auto;filter:brightness(0) invert(1);object-fit:contain;"/>
     </div>
     <sc-if value="{{ canSeeCompany }}" hint-placeholder-val="{{ false }}">
       <div style="font-size:10.5px;letter-spacing:1.5px;text-transform:uppercase;color:#7e8bb0;padding:0 10px 8px;">Company</div>
@@ -2836,8 +2836,10 @@
 <script type="text/x-dc" data-dc-script>
 class Component extends DCLogic {
   // ---- persistence constants (declared FIRST: hydration runs before later fields exist) ----
-  BUILD = 'live';                       // 'live' for testers, 'dev' while iterating
-  APP_VERSION = '0.9.0';
+  // Served from /dev/ -> dev build, anything else -> live. One file serves both, so the
+  // two copies never drift; only their storage keys differ.
+  BUILD = (typeof location!=='undefined' && /\/dev\/?($|[?#])/.test(location.pathname)) ? 'dev' : 'live';
+  APP_VERSION = '1.0.0';
   SCHEMA_VERSION = 3;                   // bump whenever saved data changes shape
   get STORE_KEY(){ return 'ncjb.commercial.v1.' + this.BUILD; }
   LEGACY_STORE_KEYS = ['ncjb.commercial.v1'];
